@@ -66,10 +66,10 @@ NOCONFIGURE=1 gnome-autogen.sh --add-missing
   --disable-static       \
   --disable-silent-rules \
   --with-smclient=xsmp
-touch pix/.deps/dom_test-dom.Po
-touch pix/.deps/glib_utils_test-glib-utils.Po
-touch pix/.deps/gsignature_test-gsignature.Po
-touch pix/.deps/oauth_test-gsignature.Po
+#touch pix/.deps/dom_test-dom.Po
+#touch pix/.deps/glib_utils_test-glib-utils.Po
+#touch pix/.deps/gsignature_test-gsignature.Po
+#touch pix/.deps/oauth_test-gsignature.Po
 %make_build
 
 %install

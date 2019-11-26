@@ -1,6 +1,6 @@
 Name:           pix
-Version:        2.2.0
-Release:        %mkrel 1
+Version:        2.4.1
+Release:        1
 Summary:        Image viewer and browser utility
 License:        GPL-2.0+
 Group:          Graphics/Viewers
@@ -8,7 +8,6 @@ Url:            https://github.com/linuxmint/pix
 Source:         https://github.com/linuxmint/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:  bison
 BuildRequires:  flex
-BuildRequires:  gcc-c++
 BuildRequires:  gnome-common
 BuildRequires:  itstool
 BuildRequires:  pkgconfig(libjpeg)

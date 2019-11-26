@@ -10,6 +10,7 @@ BuildRequires:  bison
 BuildRequires:  flex
 BuildRequires:  gnome-common
 BuildRequires:  itstool
+BuildRequires:  intltool
 BuildRequires:  pkgconfig(libjpeg)
 BuildRequires:  pkgconfig(libtiff-4)
 BuildRequires:  yelp-tools

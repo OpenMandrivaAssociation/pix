@@ -1,6 +1,6 @@
 Name:           pix
-Version:        2.4.11
-Release:        2
+Version:        2.6.0
+Release:        1
 Summary:        Image viewer and browser utility
 License:        GPL-2.0+
 Group:          Graphics/Viewers

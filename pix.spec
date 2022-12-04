@@ -81,7 +81,7 @@ find %{buildroot} -name "*.la" -delete
 %find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
-%doc COPYING README debian/changelog
+%doc COPYING README* debian/changelog
 %{_bindir}/%{name}
 %{_libdir}/%{name}/
 %{_datadir}/%{name}/

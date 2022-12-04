@@ -61,6 +61,9 @@ slide shows, set your desktop background, and more.
 %autopatch -p1
 
 %build
+export CC=gcc
+export CXX=g++
+
 NOCONFIGURE=1 gnome-autogen.sh --add-missing
 %configure2_5x \
   --disable-static       \

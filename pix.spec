@@ -6,6 +6,11 @@ License:        GPL-2.0+
 Group:          Graphics/Viewers
 Url:            https://github.com/linuxmint/pix
 Source:         https://github.com/linuxmint/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
+Patch0:		pix-2.8.9-exiv2-0.28.patch
+# How can this CRAP even compile??? Gmonkeys don't even get
+# pointer basics right. Fortunately clang catches a few more
+# insanities than gcc.
+Patch1:		pix-2.8.9-gnomes-are-stupid-drunk-monkeys-on-crack.patch
 BuildRequires:  bison
 BuildRequires:  flex
 BuildRequires:  gnome-common
@@ -57,15 +62,11 @@ comments to images, organise images in catalogs, print images, view
 slide shows, set your desktop background, and more.
 
 %prep
-%setup -q
-%autopatch -p1
+%autosetup -p1
 
 %build
-export CC=gcc
-export CXX=g++
-
 NOCONFIGURE=1 gnome-autogen.sh --add-missing
-%configure2_5x \
+%configure \
   --disable-static       \
   --disable-silent-rules \
   --with-smclient=xsmp

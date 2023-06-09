@@ -7,10 +7,7 @@ Group:          Graphics/Viewers
 Url:            https://github.com/linuxmint/pix
 Source:         https://github.com/linuxmint/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
 Patch0:		pix-2.8.9-exiv2-0.28.patch
-# How can this CRAP even compile??? Gmonkeys don't even get
-# pointer basics right. Fortunately clang catches a few more
-# insanities than gcc.
-Patch1:		pix-2.8.9-gnomes-are-stupid-drunk-monkeys-on-crack.patch
+
 BuildRequires:  bison
 BuildRequires:  flex
 BuildRequires:  gnome-common

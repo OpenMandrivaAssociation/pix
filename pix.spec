@@ -8,6 +8,7 @@ Url:            https://github.com/linuxmint/pix
 Source:         https://github.com/linuxmint/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
 Patch0:		pix-2.8.9-exiv2-0.28.patch
 
+BuildRequires:  meson
 BuildRequires:  bison
 BuildRequires:  flex
 BuildRequires:  gnome-common
@@ -35,7 +36,7 @@ BuildRequires:  pkgconfig(libsecret-1)
 BuildRequires:  pkgconfig(libsoup-gnome-2.4) >= 2.36.0
 BuildRequires:  pkgconfig(libwebp) >= 0.2.0
 BuildRequires:  pkgconfig(sm) >= 1.0.0
-BuildRequires:  pkgconfig(webkit2gtk-4.0)
+BuildRequires:  pkgconfig(webkit2gtk-4.1)
 BuildRequires:  pkgconfig(zlib)
 BuildRequires:  pkgconfig(glib-2.0)
 
@@ -62,19 +63,11 @@ slide shows, set your desktop background, and more.
 %autosetup -p1
 
 %build
-NOCONFIGURE=1 gnome-autogen.sh --add-missing
-%configure \
-  --disable-static       \
-  --disable-silent-rules \
-  --with-smclient=xsmp
-#touch pix/.deps/dom_test-dom.Po
-#touch pix/.deps/glib_utils_test-glib-utils.Po
-#touch pix/.deps/gsignature_test-gsignature.Po
-#touch pix/.deps/oauth_test-gsignature.Po
-%make_build
+%meson
+%meson_build
 
 %install
-%make_install
+%meson_install
 find %{buildroot} -name "*.la" -delete
 %find_lang %{name} --with-gnome
 

@@ -1,4 +1,6 @@
 %define _disable_ld_no_undefined 1
+%global optflags %{optflags} -Wno-error -Wno-implicit-function-declaration
+%global optflags %{optflags} -Wno-incompatible-function-pointer-types
 
 Name:           pix
 Version:        3.0.1

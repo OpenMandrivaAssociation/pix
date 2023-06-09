@@ -1,3 +1,5 @@
+%define _disable_ld_no_undefined 1
+
 Name:           pix
 Version:        3.0.1
 Release:        1

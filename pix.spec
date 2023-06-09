@@ -17,6 +17,7 @@ BuildRequires:  intltool
 BuildRequires:  pkgconfig(libjpeg)
 BuildRequires:  pkgconfig(libtiff-4)
 BuildRequires:  yelp-tools
+BuildRequires:  pkgconfig(colord)
 BuildRequires:  pkgconfig(clutter-1.0) >= 1.0.0
 BuildRequires:  pkgconfig(clutter-gtk-1.0) >= 1.0.0
 BuildRequires:  pkgconfig(exiv2) >= 0.21
@@ -30,15 +31,18 @@ BuildRequires:  pkgconfig(gtk+-3.0) >= 3.10.0
 BuildRequires:  pkgconfig(ice)
 BuildRequires:  pkgconfig(libbrasero-burn3) >= 3.2.0
 BuildRequires:  pkgconfig(libopenraw-0.1) >= 0.0.8
+BuildRequires:  pkgconfig(libraw)
 BuildRequires:  pkgconfig(libpng)
 BuildRequires:  pkgconfig(librsvg-2.0) >= 2.34.0
 BuildRequires:  pkgconfig(libsecret-1)
 BuildRequires:  pkgconfig(libsoup-gnome-2.4) >= 2.36.0
 BuildRequires:  pkgconfig(libwebp) >= 0.2.0
+BuildRequires:  pkgconfig(lcms2)
 BuildRequires:  pkgconfig(sm) >= 1.0.0
-BuildRequires:  pkgconfig(webkit2gtk-4.1)
+BuildRequires:  pkgconfig(webkit2gtk-4.0)
 BuildRequires:  pkgconfig(zlib)
 BuildRequires:  pkgconfig(glib-2.0)
+BuildRequires:  pkgconfig(xapp)
 
 %description
 pix lets you browse your hard disk, showing you thumbnails of

@@ -19,6 +19,7 @@ BuildRequires:  intltool
 BuildRequires:  pkgconfig(libjpeg)
 BuildRequires:  pkgconfig(libtiff-4)
 BuildRequires:  yelp-tools
+BuildRequires:  pkgconfig(cairo)
 BuildRequires:  pkgconfig(colord)
 BuildRequires:  pkgconfig(clutter-1.0) >= 1.0.0
 BuildRequires:  pkgconfig(clutter-gtk-1.0) >= 1.0.0

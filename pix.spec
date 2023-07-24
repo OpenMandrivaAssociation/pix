@@ -3,7 +3,7 @@
 %global optflags %{optflags} -Wno-incompatible-function-pointer-types
 
 Name:           pix
-Version:        3.0.1
+Version:        3.0.2
 Release:        1
 Summary:        Image viewer and browser utility
 License:        GPL-2.0+

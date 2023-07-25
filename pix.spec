@@ -93,6 +93,6 @@ find %{buildroot} -name "*.la" -delete
 %{_mandir}/man1/%{name}.1*
 
 %files devel
-#{_includedir}/%{name}-2.8/
 %{_datadir}/aclocal/%{name}.m4
-#{_libdir}/pkgconfig/%{name}-2.8.pc
+%{_includedir}/pix/
+%{_libdir}/pkgconfig/pix.pc

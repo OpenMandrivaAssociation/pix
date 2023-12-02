@@ -11,7 +11,6 @@ License:        GPL-2.0+
 Group:          Graphics/Viewers
 Url:            https://github.com/linuxmint/pix
 Source:         https://github.com/linuxmint/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
-Patch0:		pix-2.8.9-exiv2-0.28.patch
 
 BuildRequires:  meson
 BuildRequires:  bison

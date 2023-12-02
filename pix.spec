@@ -4,7 +4,7 @@
 %global optflags %{optflags} -Wno-return-type
 
 Name:           pix
-Version:        3.0.2
+Version:        3.2.0
 Release:        1
 Summary:        Image viewer and browser utility
 License:        GPL-2.0+

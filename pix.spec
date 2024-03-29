@@ -5,7 +5,7 @@
 
 Name:           pix
 Version:        3.2.2
-Release:        1
+Release:        2
 Summary:        Image viewer and browser utility
 License:        GPL-2.0+
 Group:          Graphics/Viewers
@@ -40,11 +40,11 @@ BuildRequires:  pkgconfig(libraw)
 BuildRequires:  pkgconfig(libpng)
 BuildRequires:  pkgconfig(librsvg-2.0) >= 2.34.0
 BuildRequires:  pkgconfig(libsecret-1)
-BuildRequires:  pkgconfig(libsoup-gnome-2.4) >= 2.36.0
 BuildRequires:  pkgconfig(libwebp) >= 0.2.0
 BuildRequires:  pkgconfig(lcms2)
 BuildRequires:  pkgconfig(sm) >= 1.0.0
-BuildRequires:  pkgconfig(webkit2gtk-4.0)
+BuildRequires:  pkgconfig(libsoup-3.0)
+BuildRequires:  pkgconfig(webkit2gtk-4.1)
 BuildRequires:  pkgconfig(zlib)
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(xapp)

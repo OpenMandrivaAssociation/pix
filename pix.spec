@@ -4,8 +4,8 @@
 %global optflags %{optflags} -Wno-return-type
 
 Name:           pix
-Version:        3.4.5
-Release:        2
+Version:        3.4.11
+Release:        1
 Summary:        Image viewer and browser utility
 License:        GPL-2.0+
 Group:          Graphics/Viewers
@@ -35,7 +35,7 @@ BuildRequires:  pkgconfig(gstreamer-video-1.0)
 BuildRequires:  pkgconfig(gtk+-3.0) >= 3.10.0
 BuildRequires:  pkgconfig(ice)
 BuildRequires:  pkgconfig(libbrasero-burn3) >= 3.2.0
-BuildRequires:  pkgconfig(libopenraw-0.1) >= 0.0.8
+#BuildRequires:  pkgconfig(libopenraw-0.1) >= 0.0.8
 BuildRequires:  pkgconfig(libraw)
 BuildRequires:  pkgconfig(libpng)
 BuildRequires:  pkgconfig(librsvg-2.0) >= 2.34.0
